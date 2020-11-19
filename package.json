@@ -1,0 +1,23 @@
+{
+  "name": "bear-collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaishiNishizawa/bear-collections.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaishiNishizawa/bear-collections/issues"
+  },
+  "homepage": "https://github.com/TaishiNishizawa/bear-collections#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
