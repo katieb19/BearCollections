@@ -1,0 +1,36 @@
+const express = require("express");
+const app = express();
+const path = require('path');
+const PORT = 3000;
+
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+  res.render('home/home.ejs');
+});
+
+app.get("/log", (req, res) => {
+  res.send("Log");
+});
+
+app.get("/log/books", (req, res) => {
+  res.send("Log Books");
+});
+
+app.get("/log/movie", (req, res) => {
+  res.send("Log Movie");
+});
+
+app.get("/log/show", (req, res) => {
+  res.send("Log TV Show");
+});
+
+app.get("/thanks", (req, res) => {
+  res.send("TY");
+});
+
+app.listen(PORT, () => {
+  console.log(`LISTENING ON PORT ${PORT}`);
+});
