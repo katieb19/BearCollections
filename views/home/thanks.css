@@ -1,0 +1,99 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.message {
+    color: #742323;
+    /*position: absolute;*/
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 10%;
+    font-size: 150%;
+}
+
+body {
+    background:#F8EDE4;
+  }
+/*
+div.container6 {
+height: 10em;
+display: flex;
+align-items: center;
+justify-content: center }
+
+div.container6 p {
+margin: 0 }*/
+
+/* Add background color to the top navigation */
+.topnav {
+    background-color: #C6A589;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #C6A589;
+    color: #ffeed2;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    /* background-color: #9B5F2B; */
+    color: #ffeed2;
+}
+
+/*
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid > div {
+    background-color: #FFF9F9;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 70%;
+}
+*/
+.column {
+    float: left;
+    width: 50%;
+    background-color: #FFF9F9;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 70%;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+
