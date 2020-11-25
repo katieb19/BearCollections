@@ -16,15 +16,15 @@ app.get("/log", (req, res) => {
 });
 
 app.get("/log/books", (req, res) => {
-  res.send("Log Books");
+  res.render('logs/logbooks');
 });
 
-app.get("/log/movie", (req, res) => {
-  res.send("Log Movie");
-});
+//app.get("/log/movie", (req, res) => {
+ // res.send("Log Movie");
+//});
 
 app.get("/log/show", (req, res) => {
-  res.send("Log TV Show");
+  res.render('logs/logshow.ejs');
 });
 
 app.get("/thanks", (req, res) => {
