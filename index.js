@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.render('home/home.ejs');
 });
 
+app.get("/rank", (req, res) => {
+  res.render('home/rank.ejs');
+});
+
 app.get("/log", (req, res) => {
   res.send("Log");
 });
@@ -19,12 +23,8 @@ app.get("/log/books", (req, res) => {
   res.render('logs/logbooks');
 });
 
-//app.get("/log/movie", (req, res) => {
- // res.send("Log Movie");
-//});
-
-app.get("/log/show", (req, res) => {
-  res.render('logs/logshow.ejs');
+app.get("/log/movies", (req, res) => {
+  res.render('logs/logmovies.ejs');
 });
 
 app.get("/thanks", (req, res) => {
