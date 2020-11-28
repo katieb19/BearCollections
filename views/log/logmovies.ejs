@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link type="text/css" rel='stylesheet' href='/logs/logmovies.css' />
+        <link type="text/css" rel='stylesheet' href='/log/logmovies.css' />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="https://use.typekit.net/onc2npj.css">
@@ -20,13 +20,12 @@
     <div class = "ovalrectangle">
         <h2> Enter the Full Title of a Movie That You've Enjoyed </h2>
         <div>
-            <form action="action_page.php">
-              <label for="fname"></label>
-              <input type="text" id="fname" name="firstname" placeholder="Title of Movie">
-              <input type="submit" value="Submit">
+            <form action="thanksmovies.php" method="POST">
+              <label for="movie_title"></label>
+              <input type="text" name="movie_title" placeholder="Title of Movie">
+              <input type="submit">
             </form>
         </div>
     </div>
 </body>
-
 </html>

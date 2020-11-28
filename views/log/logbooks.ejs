@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link type="text/css" rel='stylesheet' href='/logs/logbooks.css' />
+        <link type="text/css" rel='stylesheet' href='/log/logbooks.css' />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="https://use.typekit.net/onc2npj.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log Books</title>
     </head>
-
 <body>
     <div class="topnav">
         <a href="/">Home</a>
@@ -20,13 +19,11 @@
     <div class = "ovalrectangle">
         <h2> Enter the Full Title of a Book That You've Enjoyed </h2>
         <div>
-            <form action="action_page.php">
-              <label for="fname"></label>
-              <input type="text" id="fname" name="firstname" placeholder="Title of Book">
-              <input type="submit" value="Submit">
+            <form action="thanksbooks.php" method="POST">
+                <input type="text" name="book_title" placeholder="Title of Book" required>
+                <input type="submit">
             </form>
         </div>
     </div>
 </body>
-
 </html>

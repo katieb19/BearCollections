@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="home/thanks.css">
+    <link rel="stylesheet" href="thanks.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.typekit.net/onc2npj.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,19 @@
 <body>
     <div class="topnav">
         <a href="/">Home</a>
-<<<<<<< HEAD
-        <a href="/log/books">Books</a>
-        <a href="#movies">Movies</a>
-        <a href="/log/shows">TV Shows</a>
-=======
         <a href="/rank">Rankings</a>
         <a href="/log/books">Submit Book</a>
         <a href="/log/movies">Submit Movie</a>
->>>>>>> 737c3b5b1288fd3a09dcc774df05cafc541d01b3
     </div>
     <h1>Thank You for Submitting!</h1>
-</body>
+    <?php
+        include('dbcon.php');
+            $title = $_POST["book_title"];
+            $sqlinsert = "INSERT INTO books (book_title) VALUES ('" . $title . "')";
 
+            if (!mysqli_query($dbcon, $sqlinsert)) {
+                die('Error inserting book title');
+            }
+    ?>
+</body>
 </html>

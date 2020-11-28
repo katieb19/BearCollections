@@ -12,28 +12,27 @@ body {
 .topnav {
     background-color: #C6A589;
     overflow: hidden;
-  }
+}
   
 /* Style the links inside the navigation bar */
 .topnav a {
- float: left;
- color: #ffffff;
- text-align: center;
- padding: 14px 30px;
- text-decoration: none;
- font-size: 17px;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 17px;
 }
     
-  /* Change the color of links on hover */
+/* Change the color of links on hover */
 .topnav a:hover {
- background-color: #C6A589;
- color: #ffeed2;
+    background-color: #C6A589;
+    color: #ffeed2;
 }
     
- /* Add a color to the active/current link */
+/* Add a color to the active/current link */
 .topnav a.active {
-/* background-color: #9B5F2B; */
- color: #ffeed2;
+    color: #ffeed2;
 }
 
 .covers {
@@ -49,8 +48,7 @@ body {
     background-color: #ffeed2;
     color: #000000;
     text-align: left;
-    padding: 3vw;
-    
+    padding: 3vw; 
 }
 
 p {
