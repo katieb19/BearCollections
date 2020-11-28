@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
   res.render('home/home.ejs');
 });
 
+<<<<<<< HEAD
 app.get("/log/books", (req, res) => {
   res.render('log/books.ejs');
 });
@@ -21,6 +22,22 @@ app.get("/log/books", (req, res) => {
 
 app.get("/log/shows", (req, res) => {
   res.render("log/shows.ejs");
+=======
+app.get("/rank", (req, res) => {
+  res.render('home/rank.ejs');
+});
+
+app.get("/log", (req, res) => {
+  res.send("Log");
+});
+
+app.get("/log/books", (req, res) => {
+  res.render('logs/logbooks');
+});
+
+app.get("/log/movies", (req, res) => {
+  res.render('logs/logmovies.ejs');
+>>>>>>> 737c3b5b1288fd3a09dcc774df05cafc541d01b3
 });
 
 app.get("/thanks", (req, res) => {

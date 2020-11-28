@@ -1,0 +1,107 @@
+html {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: tenon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+p {
+  color: #742323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 350%;
+}
+
+h2 {
+    color: #742323;
+    display: flex;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+body {
+  background:#C6A589;
+}
+
+/* Add background color to the top navigation */
+.topnav {
+    background-color: #C6A589;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+ float: left;
+ color: #ffffff;
+ text-align: center;
+ padding: 14px 30px;
+ text-decoration: none;
+ font-size: 17px;
+}
+    
+  /* Change the color of links on hover */
+.topnav a:hover {
+ background-color: #C6A589;
+ color: #ffeed2;
+}
+    
+ /* Add a color to the active/current link */
+.topnav a.active {
+/* background-color: #9B5F2B; */
+ color: #ffeed2;
+}
+
+.ovalrectangle {
+    /*height: 25vw;
+    width: 40vw; */
+    font-size: auto;
+    text-align: center;
+    min-height: 29vw;
+    max-height: 30vw;
+    width: 50vw;
+    max-width: 50vw;
+    border-radius: 2vw;
+    background-color: #E3C9B2;
+    margin: auto;
+    display: block;
+    overflow: flex;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+   display: block;
+  width: 40vw;
+  font-size: 100%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  height: 5vw;
+  border: .25vw solid #bb916c;
+}
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+  display: block; 
+  width: 7em;
+  font-size: 100%;
+  margin: auto;
+  margin-bottom: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+  height: 3vw;
+  text-align: center;
+  background-color: #742327;
+  border: none;
+  color: white;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    opacity: 70%;
+  }
+  
