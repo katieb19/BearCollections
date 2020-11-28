@@ -11,20 +11,16 @@ app.get("/", (req, res) => {
   res.render('home/home.ejs');
 });
 
-app.get("/log", (req, res) => {
-  res.send("Log");
-});
-
 app.get("/log/books", (req, res) => {
-  res.send("Log Books");
+  res.render('log/books.ejs');
 });
 
-app.get("/log/movie", (req, res) => {
-  res.send("Log Movie");
-});
+// app.get("/log/movie", (req, res) => {
+//   res.send("Log Movie");
+// });
 
-app.get("/log/show", (req, res) => {
-  res.send("Log TV Show");
+app.get("/log/shows", (req, res) => {
+  res.render("log/shows.ejs");
 });
 
 app.get("/thanks", (req, res) => {
