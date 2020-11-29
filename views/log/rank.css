@@ -1,9 +1,11 @@
+/* Add font for whole html file */
 html {
     font-family: tenon, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Add a background color for the body */
 body {
     background-color: #C6A589;
 }
@@ -35,12 +37,14 @@ body {
     color: #ffeed2;
 }
 
+/* Format all the book cover images */
 .covers {
     display: flex;
     justify-content: space-between;
     margin-right: 8vw;
 }
 
+/* Format each book cover image */
 .rectangle {
     height: 14vw;
     width: 8vw;
@@ -51,6 +55,7 @@ body {
     padding: 3vw; 
 }
 
+/* Format paragraph */
 p {
     font-size: 150%;
     color: #ffeed2;
@@ -58,6 +63,7 @@ p {
     margin-bottom: -1vw;
 }
 
+/* Format header one */
 h1 {
     margin-left: 2vw;
 }

@@ -1,9 +1,11 @@
+/* Add font for whole html file */
 html {
   font-family: tenon, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Format paragraph */
 p {
   color: #742323;
   height: 6em;
@@ -13,6 +15,7 @@ p {
   font-size: 200%;
 }
 
+/* Add a background color for the body */
 body {
   background:#C6A589;
 }
@@ -44,6 +47,7 @@ body {
   color: #ffeed2;
 }
 
+/* Format header one */
 h1 {
   font-size: 15vw;
   margin-left: 3vw;

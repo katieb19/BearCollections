@@ -1,14 +1,16 @@
+/* Add font for whole html file */
 html {
   font-family: tenon, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Add background color to the body */
 body {
   background:#C6A589;
 }
 
-  /* Add background color to the top navigation */
+/* Add background color to the top navigation */
 .topnav {
   background-color: #C6A589;
   overflow: hidden;
@@ -35,6 +37,7 @@ body {
   color: #ffeed2;
 }
 
+/* Format header */
 h1 {
   font-size: 15vw;
   margin-left: 3vw;

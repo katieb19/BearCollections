@@ -9,6 +9,7 @@
         <title>Log Books</title>
     </head>
 <body>
+    <!--navigation bar-->
     <div class="topnav">
         <a href="/">Home</a>
         <a href="/rank">Rankings</a>
@@ -16,9 +17,11 @@
         <a href="/log/movies">Submit Movie</a>
     </div>
     <p> Log a Book </p>
+    <!--place to enter a book-->
     <div class = "ovalrectangle">
         <h2> Enter the Full Title of a Book That You've Enjoyed </h2>
         <div>
+            <!--form data is sent to database, user is redirected to thanks page-->
             <form action="thanksbooks.php" method="POST">
                 <input type="text" name="book_title" placeholder="Title of Book" required>
                 <input type="submit">

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!--navigation bar-->
     <div class="topnav">
         <a href="/">Home</a>
         <a href="/rank">Rankings</a>
@@ -19,11 +20,12 @@
     <h1>Thank You for Submitting!</h1>
     <?php
         include('dbcon.php');
-            $title = $_POST["book_title"];
+            $title = $_POST["book_title"]; // bind $title to the entry submitted
+            // insert the entry submitted into the table called books in the column 'book_title'
             $sqlinsert = "INSERT INTO books (book_title) VALUES ('" . $title . "')";
 
             if (!mysqli_query($dbcon, $sqlinsert)) {
-                die('Error inserting book title');
+                die('Error inserting book title'); // could not connect to database
             }
     ?>
 </body>

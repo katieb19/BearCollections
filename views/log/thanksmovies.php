@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!--navigation bar-->
     <div class="topnav">
         <a href="/">Home</a>
         <a href="/rank">Rankings</a>
@@ -19,11 +20,12 @@
     <h1>Thank You for Submitting!</h1>
     <?php
         include('dbcon.php');
-            $title = $_POST["movie_title"];
+            $title = $_POST["movie_title"]; // bind $title to the entry submitted
+            // insert the entry submitted into the table called movies in the column 'movie_title'
             $sqlinsert = "INSERT INTO movies (movie_title) VALUES ('" . $title . "')";
 
             if (!mysqli_query($dbcon, $sqlinsert)) {
-                die('Error inserting movie title');
+                die('Error inserting movie title'); // could not connect to database
             }
     ?>
 </body>

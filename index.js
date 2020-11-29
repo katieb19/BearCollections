@@ -11,6 +11,7 @@ app.use(express.static(__dirname + "/views"));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
+// set up body parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -28,12 +29,14 @@ app.set('view engine', 'php');
 // routing all .php file to php-express
 app.all(/.+\.php$/, phpExpress.router);
 
+
+// retrieve static files for endpoints
 app.get("/", (req, res) => {
   res.render('home/home.ejs');
 });
 
 app.get("/rank", (req, res) => {
-  res.render('home/rank.ejs');
+  res.render('log/rank.ejs');
 });
 
 app.get("/log", (req, res) => {
@@ -48,10 +51,7 @@ app.get("/log/movies", (req, res) => {
   res.render('log/logmovies.ejs');
 });
 
-app.get("/thanks", (req, res) => {
-  res.render("home/thanks");
-});
-
+// show that port is listening when we run nodemon
 app.listen(PORT, () => {
   console.log(`LISTENING ON PORT ${PORT}`);
 });

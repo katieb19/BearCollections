@@ -10,6 +10,7 @@
     </head>
 
 <body>
+    <!--navigation bar-->
     <div class="topnav">
         <a href="/">Home</a>
         <a href="/rank">Rankings</a>
@@ -17,9 +18,11 @@
         <a href="/log/movies">Submit Movie</a>
     </div>
     <p> Log a Movie </p>
+    <!--place to enter movies-->
     <div class = "ovalrectangle">
         <h2> Enter the Full Title of a Movie That You've Enjoyed </h2>
         <div>
+            <!--form data is sent to database, user is redirected to thanks page-->
             <form action="thanksmovies.php" method="POST">
               <label for="movie_title"></label>
               <input type="text" name="movie_title" placeholder="Title of Movie">
