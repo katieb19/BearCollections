@@ -2,8 +2,6 @@
 
 README.md
 
-# BearCollections
-
 ## What It Is
 
 BearCollections is a website that allows users to submit book and movie recommendations. This information would then be inputted in a larger database where the owner can manipulate and analyze the data. The targeted audience for this website is Brown University students and has been made as a way to pool a list of recommendations from Brown students.
